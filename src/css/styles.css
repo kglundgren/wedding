@@ -1,0 +1,34 @@
+html {
+    font-size: 2rem;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 20rem;
+}
+
+main > :first-child {
+}
+
+section {
+    border: 1px solid #000;
+    background-color: #274295;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
