@@ -1,3 +1,24 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Rouge+Script&display=swap');
+
+/* Colors */
+:root {
+    --hot-pink: #ff35b4;
+}
+
+.rouge-script-regular {
+    font-family: "Rouge Script", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.quicksand {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 html {
     font-size: 20px;
     -webkit-text-size-adjust: 100%;
@@ -5,11 +26,77 @@ html {
 
 html, body {
     height: 100%;
+
+    /* Set default font for the page to 'Quicksand'. */
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 body {
     display: flex;
     flex-direction: column;
+    margin: 0;
+}
+
+.page-title {
+    font-size: 3rem;
+}
+
+.heading-1 {
+    font-size: 2rem;
+}
+
+.heading-2 {
+    font-size: 1.2rem;
+    font-weight: 550;
+}
+
+p {
+    color: #696969;
+    font-weight: 450;
+}
+
+header {
+    position: relative;
+
+    .text {
+        padding: 1rem;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 5rem;
+
+        .description {
+            text-align: center;
+
+            .names {
+                margin: 1rem auto 0;
+            }
+
+            .getting-married {
+            }
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        p {
+            color: white;
+        }
+    }
+
+    .header-img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        object-fit: cover;
+        filter: brightness(50%) sepia(25%);
+    }
 }
 
 main {
@@ -18,25 +105,68 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
-    gap: 20rem;
-}
-
-main > :first-child {
-    margin-top: 2rem;
+    padding: 0 2rem;
+    gap: 15rem;
 }
 
 main > :last-child {
-    margin-bottom: 10rem;
+    margin-bottom: 15rem;
 }
 
-section {
-    border: 1px solid #000;
-    background-color: #274295;
-    color: white;
+.introduction {
     text-align: center;
-    padding: 2rem;
+
+    h1 {
+        color: var(--hot-pink);
+        margin-bottom: 0;
+    }
 }
+
+.profiles {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+.profile {
+    .profile-img {
+        width: 50%;
+        aspect-ratio: 1 / 1;
+        margin: 0 auto;
+
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
+
+    .profile-caption {
+        text-align: center;
+        margin: 0.5rem auto;
+        color: var(--hot-pink);
+        font-size: 1.5rem;
+    }
+}
+
+.polaroid {
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    img {
+        width: 100%;
+    }
+
+    .polaroid-caption {
+      text-align: center;
+      padding: 0.5rem;
+    }
+}
+
 
 @media (min-width: 1200px) {
     html {
