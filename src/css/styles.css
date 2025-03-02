@@ -3,7 +3,8 @@
 
 /* Colors */
 :root {
-    --hot-pink: #ff35b4;
+    --hot-pink: 241, 78, 149;
+    --light-gray: 105, 105, 105;
 }
 
 .rouge-script-regular {
@@ -54,8 +55,18 @@ body {
 }
 
 p {
-    color: #696969;
+    color: rgb(var(--light-gray));
     font-weight: 450;
+}
+
+/* Animations */
+@keyframes bounce {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0.92);
+    }
 }
 
 header {
@@ -89,6 +100,42 @@ header {
         p {
             color: white;
         }
+
+        .countdown {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 0.3rem;
+            justify-content: center;
+
+            .bubble {
+                text-align: center;
+                width: 5rem;
+                height: 5rem;
+                background-color: rgba(var(--hot-pink), 0.8);
+                border-radius: 50%;
+                display: inline-block;
+                animation-name: bounce;
+                animation-duration: 0.5s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+                animation-timing-function: ease-in;
+
+                .time {
+                    position: relative;
+                    top: 0.6rem;
+                    font-size: 1rem;
+                }
+
+                .time-value {
+                    font-size: 1.5rem;
+                }
+
+                .time-unit {
+                    font-size: 0.65rem;
+                }
+            } 
+        }
     }
 
     .header-img {
@@ -119,7 +166,7 @@ main > :last-child {
     text-align: center;
 
     h1 {
-        color: var(--hot-pink);
+        color: rgb(var(--hot-pink));
         margin-bottom: 0;
     }
 }
@@ -149,7 +196,7 @@ main > :last-child {
     .profile-caption {
         text-align: center;
         margin: 0.5rem auto;
-        color: var(--hot-pink);
+        color: rgb(var(--hot-pink));
         font-size: 1.5rem;
     }
 }

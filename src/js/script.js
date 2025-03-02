@@ -9,6 +9,10 @@ function isDST(d) {
 
 const nowIsDST = isDST(new Date());
 const countdown = document.querySelector('#countdown');
+const days = document.querySelector('#days');
+const hours = document.querySelector('#hours');
+const minutes = document.querySelector('#minutes');
+const seconds = document.querySelector('#seconds');
 const target = new Date(2025, 5, 7, 14, 30); // Wedding ceremony.
 
 function calculateTime() {
@@ -32,7 +36,10 @@ function calculateTime() {
         h++;
     }
 
-    countdown.textContent = `Dagar: ${d}. Timmar: ${h}. Minuter: ${m}. Sekunder: ${s}.`;
+    days.textContent = d;
+    hours.textContent = h;
+    minutes.textContent = m;
+    seconds.textContent = s;
 }
 
 setInterval(calculateTime, 1000);
