@@ -9,7 +9,7 @@ function isDST(d) {
 
 const nowIsDST = isDST(new Date());
 const countdown = document.querySelector('#countdown');
-const target = new Date('2025-06-07T14:30:00+02:00'); // Wedding ceremony.
+const target = new Date(2025, 5, 7, 14, 30); // Wedding ceremony.
 
 function calculateTime() {
     let diffMs = target - Date.now();
