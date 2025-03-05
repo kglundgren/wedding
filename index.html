@@ -3,13 +3,13 @@
   <meta charset="utf-8">
   <title>Wedding</title>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link href="src/css/styles.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
   <header>
-    <img class="header-img" src="src/img/gustav_och_sofie_bergabo.webp" alt="Gustav och Sofie på Bergabo">
+    <img class="bg-img" src="img/gustav_och_sofie_bergabo.webp" alt="Gustav och Sofie på Bergabo">
     <div class="text">
       <div>
         <h1 class="page-title rouge-script-regular">Bröllop</h1>
@@ -49,7 +49,7 @@
 
   <main>
 
-    <section class="introduction">
+    <div class="introduction">
       <h1 class="heading-1 rouge-script-regular">Hej där!</h1>
       <h2 class="heading-2">På pingstafton den 7 juni 2025, i Lunedet, Karlskoga</h2>
       <p>Så välkomnar vi er att fira vårt bröllop</p>
@@ -58,7 +58,7 @@
       <div class="profiles">
         <div class="profile" data-aos="fade-up">
           <div class="profile-img">
-            <img src="src/img/gustav.webp" alt="Gustav">
+            <img src="img/gustav.webp" alt="Gustav">
             <div class="profile-caption rouge-script-regular">Gustav Lundgren</div>
           </div>
           <p>En solig dag den 8 juli 1992 föddes han, den mäktige, märklige, fantastiske Gustav!</p>
@@ -66,29 +66,81 @@
 
         <div class="profile" data-aos="fade-up">
           <div class="profile-img">
-            <img src="src/img/sofie.webp" alt="Sofie">
+            <img src="img/sofie.webp" alt="Sofie">
             <div class="profile-caption rouge-script-regular">Sofie Juhl</div>
           </div>
           <p>En honungs- och vaniljdoftande septembergryning, då föddes hon: den mjuka, snälla, underbara Sofie!</p>
         </div>
       </div>
-    </section>
+    </div>
 
     <!-- <section class="fun-facts" data-aos="fade-up"> -->
     <!--   <p>Gustav och Sofie blev ett par den 21 december, 2012.</p> -->
     <!-- </section> -->
 
-    <section class="ceremony">
+    <div class="schedule">
+      <img class="bg-img" src="img/schedule_bg.webp" alt="Schedule background image">
+      <h1 class="heading-1 rouge-script-regular">Våra evenemang</h1>
+
+      <div class="card">
+        <h2 class="heading-2">VIGSEL</h2>
+        <hr>
+        <div class="time-cards">
+          <div class="time">
+            <svg class="icon">
+              <use xlink:href="assets/icons.svg#clock"></use>
+            </svg>
+            <span>14:00</span>
+            <span>16:00</span>
+          </div>
+          <div class="time">
+            <svg class="icon">
+              <use xlink:href="assets/icons.svg#calendar"></use>
+            </svg>
+            <span>Lördag 7<br>juni, 2025</span>
+          </div>
+        </div>
+        <p>Vi börjar i idylliska Lunedet där vi gifter oss och sedan lever lyckliga i alla våra dagar. Glädjetårar och skratt uppmanas.</p>
+      </div>
+
+      <div class="card">
+        <h2 class="heading-2">PARTY</h2>
+        <hr>
+        <div class="time-cards">
+          <div class="time">
+            <svg class="icon">
+              <use xlink:href="assets/icons.svg#clock"></use>
+            </svg>
+            <span>17:00</span>
+            <span>23:00</span>
+          </div>
+          <div class="time">
+            <svg class="icon">
+              <use xlink:href="assets/icons.svg#calendar"></use>
+            </svg>
+            <span>Lördag 7<br>juni, 2025</span>
+          </div>
+        </div>
+        <p>Nu är det dags att släppa alla hämningar och festa loss på Alfred Nobels Björkborn (sprängballt)! Har du inte skrivit ett vackert tal förväntar vi oss en fet swish som muta.</p>
+      </div>
+
+    </div>
+
+    <div class="ceremony">
       <div class="polaroid" data-aos="flip-left">
-        <img src="src/img/lunedskyrkan.jpg" alt="Lunedskyrkan">
+        <img src="img/lunedskyrkan.jpg" alt="Lunedskyrkan">
         <div class="polaroid-caption">Lunedskyrkan</div>
       </div>
       <p data-aos="fade-up">Häng med oss till vigseln!</p>
-    </section>
+    </div>
 
-    <section class="party" data-aos="fade-up">
-      <p>Dags att festa loss!</p>
-    </section>
+    <div class="party">
+      <div class="polaroid" data-aos="flip-left">
+        <img src="img/bjorkborn.webp" alt="Björkborn">
+        <div class="polaroid-caption">Björkborn</div>
+      </div>
+      <p data-aos="fade-up">Nu blir det fest!</p>
+    </div>
 
   </main>
 
@@ -96,6 +148,6 @@
   </footer>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="src/js/script.js"></script>
+  <script src="js/script.js"></script>
 
 </body>
